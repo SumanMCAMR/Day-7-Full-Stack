@@ -219,3 +219,17 @@ input {
 .class1 .class1-items {
   padding: 30px;
 }
+.grid-container-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  width: 50%;
+}
+.grid-child-element {
+  margin: 10px;
+  border: 1px solid red;
+  width: 530px;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+}
