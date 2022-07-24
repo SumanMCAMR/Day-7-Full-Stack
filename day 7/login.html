@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login_page</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: blue;
+      }
+      .login-data {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+        align-items: center;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 665px;
+        height: 380px;
+        margin: auto;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+      }
+
+      button:hover {
+        opacity: 0.7;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+        font-size: 18px;
+      }
+      .login-data button {
+        background-color: #4caf50;
+        width: 188px;
+        height: 55px;
+        color: black;
+        padding: 15px;
+        margin: 10px 0px;
+        font-size: 25px;
+        border: none;
+        cursor: pointer;
+      }
+      .login-data .username label {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .login-data .password {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-data">
+      <h1>Login Form</h1>
+      <div class="username">
+        <label for="email">Email id</label>
+        <input
+          type="text"
+          id="username"
+          name="email"
+          placeholder="Enter Email Id"
+          required
+        />
+      </div>
+      <div class="password">
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+        />
+      </div>
+      <div class="submit-button" id="submit-button">
+        <button type="submit" name="login" id="button1">Login</button>
+        <button type="submit" name="signup" id="button2">SignUp</button>
+      </div>
+    </div>
+  </body>
+</html>
